@@ -1,0 +1,213 @@
+/* MEDIA QUERY MANAGER
+
+$breakpoint argument choices:
+- mobile-lg (large mobile)
+- tab-port (tablet-portrait)
+- tab-land (tablet-landscape)
+- laptop (standard laptop screen resolution)
+- desktop (standard desktop screen resolution)
+- desktop-lg (1440p resolution desktop)
+- desktop-4k (4k resolution desktop)
+
+** MIN-WIDTH SETTINGS **
+- mobile-lg == min-width 550px
+- tab-port == min-width 750px
+- tab-land == min-width 1000px
+- laptop == min-width 1300px
+- desktop == min-width 1900px 118.75
+- desktop-lg == min-width 2500px 156.25
+- desktop-4k == min-width 3800px 237.5
+
+1em = 16px (16px is the default browser font-size)
+Each em amount is the min-width listed above divided 16
+For example, for tab-port, 768px / 16px = 48em
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 34.375em) {
+  html {
+    font-size: 66%;
+  }
+}
+
+@media only screen and (min-width: 46.875em) {
+  html {
+    font-size: 69.5%;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  html {
+    font-size: 73%;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  html {
+    font-size: 76.5%;
+  }
+}
+
+@media only screen and (min-width: 118.75em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 156.25em) {
+  html {
+    font-size: 83.5%;
+  }
+}
+
+@media only screen and (min-width: 237.5em) {
+  html {
+    font-size: 87%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.45;
+  background-color: #010101;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-center {
+  margin: 0 auto;
+}
+
+.u-heading-primary {
+  font-size: 3.25rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .u-heading-primary {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .u-heading-primary {
+    font-size: 4.75rem;
+  }
+}
+
+@media only screen and (min-width: 237.5em) {
+  .u-heading-primary {
+    font-size: 5.5rem;
+  }
+}
+
+.u-heading-secondary {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .u-heading-secondary {
+    font-size: 3.25rem;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .u-heading-secondary {
+    font-size: 3.75rem;
+  }
+}
+
+@media only screen and (min-width: 237.5em) {
+  .u-heading-secondary {
+    font-size: 4.25rem;
+  }
+}
+
+.u-heading-tertiary {
+  font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .u-heading-tertiary {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .u-heading-tertiary {
+    font-size: 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 237.5em) {
+  .u-heading-tertiary {
+    font-size: 3rem;
+  }
+}
+
+.u-heading-quaternary {
+  font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 81.25em) {
+  .u-heading-quaternary {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 237.5em) {
+  .u-heading-quaternary {
+    font-size: 2.5rem;
+  }
+}
+
+.u-paragraph {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 237.5em) {
+  .u-paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+.header {
+  background: url("../img/hero.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */

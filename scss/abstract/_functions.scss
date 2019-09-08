@@ -1,0 +1,71 @@
+// ----- COLORS MAP -----
+// Set to white by default - make sure to update values as needed
+$colors: (
+	pri: #050404,		// primary color
+	sec: #cc3a4f,		// secondary color
+	tert: #5d0b11,	// tertiary color
+	quat: #626a90,		// quatenary color
+	quin: #7589a3		// quinary color
+);
+
+// When we need a color from the map, we need to call this function
+// Then we use return and the map-get function, naming the map, and using the paramter as the key so it is dynamic
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+// Call the function like this: 
+// color: color(primary); --> or whichever color you need: secondary, tertiary, or quaternary
+// You can also use the lighten() and darken() functions with the map like so: 
+// color: lighten(color(primary), 7.5%);
+
+
+// ----- SIZES MAP -----
+// Similar to color map, and without use of lots of variables
+$sizes: (
+	x-tny: 0.5rem,	// extra-tiny
+	tny: 1rem,			// tiny
+	x-sml: 2rem,		// extra-small
+	sml: 3rem,			// small
+	med: 4rem,			// medium
+	lg: 5rem,				// large
+	x-lg: 6rem,			// extra-large
+	xx-lg: 7rem,		// extra-extra-large
+	hg: 8rem,				// huge
+	x-hg: 9rem,			// extra-huge
+	msv: 10rem			// massive
+);
+
+// Call the function
+@function size($size) {
+	@return map-get($sizes, $size);
+}
+// Use as a value like so:
+// font-size: size(sml);
+// font-size: size(med) * 2.5
+// font-size: size(x-lg) + 2rem;
+
+
+// ----- WRAPPER MAP -----
+$wrappers: (
+	x-tny: 50%,		// extra-tiny
+	tny: 55%,			// tiny
+	x-sml: 60%,		// extra-small
+	sml: 65%,			// small
+	med: 70%,			// medium
+	lg: 75%,			// large
+	x-lg: 80%,		// extra-large
+	xx-lg: 85%,		// extra-extra-large
+	hg: 90%,			// huge
+	x-hg: 95%,		// extra-huge
+	full: 100%		// massive
+);
+
+// Call the function
+@function wrapper($wrapper) {
+	@return map-get($wrappers, $wrapper);
+}
+// Use as a value like so:
+// width: wrapper(x-tny);
+// width: size(sml) * 2.5
+// width: size(lg) + 2rem;
