@@ -24,31 +24,31 @@ $clr-gry-xdrk-3: #222;
 $clr-gry-xdrk-4: #111;
 
 // ------------------------- IMPORTANT COLORS -------------------------
-$clr-pri: #000;
+$clr-pri: #cc3a4f;
 $clr-pri-lt: lighten($clr-pri, 7.5%);
 $clr-pri-xlt: lighten($clr-pri, 12.5%);
 $clr-pri-drk: darken($clr-pri, 7.5%);
 $clr-pri-xdrk: darken($clr-pri, 12.5%);
 
-$clr-sec: #cc3a4f;
+$clr-sec: #5d0b11;
 $clr-sec-lt: lighten($clr-sec, 7.5%);
 $clr-sec-xlt: lighten($clr-sec, 12.5%);
 $clr-sec-drk: darken($clr-sec, 7.5%);
 $clr-sec-xdrk: darken($clr-sec, 12.5%);
 
-$clr-tert: #5d0b11;
+$clr-tert: #626a90;
 $clr-tert-lt: lighten($clr-tert, 7.5%);
 $clr-tert-xlt: lighten($clr-tert, 12.5%);
 $clr-tert-drk: darken($clr-tert, 7.5%);
 $clr-tert-xdrk: darken($clr-tert, 12.5%);
 
-$clr-quat: #626a90;
+$clr-quat: #7589a3;
 $clr-quat-lt: lighten($clr-quat, 7.5%);
 $clr-quat-xlt: lighten($clr-quat, 12.5%);
 $clr-quat-drk: darken($clr-quat, 7.5%);
 $clr-quat-xdrk: darken($clr-quat, 12.5%);
 
-$clr-quin: #7589a3;
+$clr-quin: #ffe98c;
 $clr-quin-lt: lighten($clr-quin, 7.5%);
 $clr-quin-xlt: lighten($clr-quin, 12.5%);
 $clr-quin-drk: darken($clr-quin, 7.5%);
@@ -62,6 +62,8 @@ $br-xlg: 10px;
 
 // ------------------------- TEXT DECORATION -------------------------
 $txt-cntr: center;
+$txt-lft: left;
+$txt-rt: right;
 $txt-uppr: uppercase;
 $txt-lwr: lowercase;
 $txt-no-dec: none;

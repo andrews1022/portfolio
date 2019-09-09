@@ -1,0 +1,30 @@
+.icon-block {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  float: right;
+
+
+  &-link {
+    margin-left: 0.75rem;
+    transition: $transit-standard;
+
+    @include respond(laptop) {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      color: color(quat);
+    }
+  }
+
+  &-left {
+    float: left;
+  }
+
+  &-proj {
+    @media only screen and (max-width: 1000px) {
+      float: none;
+      margin: 3rem auto;
+    }
+  }
+}

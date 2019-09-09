@@ -1,5 +1,103 @@
 .header {
+  // Photo from Unsplash: https://unsplash.com/photos/RChZT-JlI9g
+  // Photographer: Sebastiaan Stam 
   background: url('../img/hero.jpg') no-repeat top center;
   background-size: cover;
   height: 100vh;
+  position: relative;
+
+  &-block {
+    opacity: 0;
+    visibility: hidden;
+
+    @include respond(tab-port) {
+      position: absolute;
+      right: 2%;
+      top: 13%;
+
+      opacity: 1;
+      visibility: visible;
+
+      &-heading-secondary {
+        font-size: 1.75rem;
+        font-weight: 400;
+
+        @include respond(laptop) {
+          font-size: 2rem;
+        }
+
+        @include respond(laptop-lg) {
+          font-size: 2.25rem;
+        }
+
+        @include respond(desktop) {
+          font-size: 3rem;
+        }
+      }
+
+      &-heading-primary {
+        font-size: 3rem;
+        font-weight: 900;
+
+        @include respond(laptop) {
+          font-size: 3.5rem;
+        }
+
+        @include respond(laptop-lg) {
+          font-size: 4.25rem;
+        }
+
+        @include respond(desktop) {
+          font-size: 6.5rem;
+        }
+      }
+    }
+
+    // Positioning text box at larger sizes
+    @include respond(tab-land) {
+      right: 12%;
+      top: 13%;  
+    }
+
+    @include respond(laptop) {
+      right: 16.5%;
+      top: 11%;
+    }
+
+    @include respond(laptop-lg) {
+      right: 18%;
+      top: 10%;
+    }
+
+    @include respond(desktop) {
+      right: 9.5%;
+      top: 8%;
+    }
+  }
+
+  &-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-icon {
+      font-size: 2.5rem;
+      transition: $transit-standard;
+      opacity: 0.75;
+
+      &:hover {
+        opacity: 1;
+        transform: translateY(4px);
+      }
+
+      @include respond(laptop) {
+        font-size: 2.75rem;
+      }
+
+      @include respond(desktop) {
+        font-size: 3rem;
+      }
+    }
+  }
 }

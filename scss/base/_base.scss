@@ -4,45 +4,46 @@ html {
 	@include htmlBoxReset;
 
 	font-size: $fnt-sz-def; // Equivalent to 10px
+	scroll-behavior: smooth;
 
-	// Quick/easy font resizing for various screen-widths based off the Media Query Manager (see _mixins.scss)
-	// min-width 576px
-	// 1rem = 11px --> 11/16 = 68.75%
+	// Quick/easy font resizing for various screen-widths based off the Media Query Manager
+
+	// min-width 550px
 	@include respond(mobile-lg) {
 		font-size: $fnt-sz-mbl-lg;
 	}
 
-	// min-width 768px
+	// min-width 750px
 	// 1rem = 11px --> 11/16 = 68.75%
 	@include respond(tab-port) {
 		font-size: $fnt-sz-tab-port;
 	}
 
-	// min-width 1024px
+	// min-width 1000px
 	// 1rem = 12px --> 12/16 = 75%
 	@include respond(tab-land) {
 		font-size: $fnt-sz-tab-land;
 	}
 
-	// min-width 1366px
+	// min-width 1300px
 	// 1rem = 13px --> 13/16 = 81.25%
 	@include respond(laptop) {
 		font-size: $fnt-sz-laptop;
 	}
 
-	// min-width 1920px
+	// min-width 1900px
 	// 1rem = 14px --> 14/16 = 87.5%
 	@include respond(desktop) {
 		font-size: $fnt-sz-desktop;
 	}
 
-	// min-width 2560px
+	// min-width 2500px
 	// 1rem = 16px --> 16/16 = 100%
 	@include respond(desktop-lg) {
 		font-size: $fnt-sz-desktop-lg;
 	}
 
-	// min-width 3840px
+	// min-width 3800px
 	// 1rem = 18px --> 18/16 = 112.5%
 	@include respond(desktop-4k) {
 		font-size: $fnt-sz-desktop-4k;
@@ -59,8 +60,10 @@ body {
 	@include defaultFontStyles;
 
 	background-color: #010101;
-	text-transform: lowercase;
 	color: $clr-wht;
+	font-family: $txt-main;
+	
+	text-transform: $txt-lwr;
 }
 
 img {

@@ -1,1 +1,36 @@
-// Styles specific to the navigation should go here
+.nav {
+
+  @include respond(tab-land) {
+    padding-right: 10rem;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    &-item {
+      font-size: size(tny) + 0.25rem;
+      margin-left: size(tny);
+      
+
+      &:not(:last-child){
+        border-right: 1px solid white;
+        padding-right: size(tny);
+      }
+
+      @include respond(laptop) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-link {
+      transition: $transit-standard;
+
+      &:hover {
+        color: color(pri);
+      }
+    }
+  }
+}

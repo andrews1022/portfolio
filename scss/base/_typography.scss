@@ -1,2 +1,64 @@
-// Font-family declarations should go here
-// Set font-sizes for headings/paragraphs
+.heading {
+
+  &-section {
+    font-size: 4.5rem;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  &-block {
+    font-size: 3.5rem;
+    text-align: center;
+
+    &-right {
+      @include respond(tab-land) {
+        text-align: right;
+      }
+    }
+
+    &-left {
+      @include respond(tab-land) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.para {
+  font-size: 1.5rem;
+  text-align: center;
+
+  @include respond (laptop) {
+    font-size: 1.75rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &-right {
+    @include respond(tab-land) {
+      margin-left: 2.5rem;
+      text-align: right;
+    }
+  }
+
+  &-left {
+    @include respond(tab-land) {
+      margin-right: 2.5rem;
+      text-align: left;
+    }
+  }
+}
+
+.pink {
+  color: color(pri);
+}
+
+.blue {
+  color: color(tert);
+}
+
+.yellow {
+  color: color(quin);
+}

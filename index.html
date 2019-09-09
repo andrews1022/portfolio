@@ -11,6 +11,9 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,900&display=swap" rel="stylesheet">
 
+	<!-- Font Awesome -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css' />
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
@@ -22,32 +25,233 @@
 
 <body>
 
+	<!-- Start of header -->
 	<header class="header">
-		<nav class="nav">
-			<ul class="nav-list">
-				<li class="nav-list-item">
-					<a href="" class="nav-list-link">About</a>
-				</li>
-				<li class="nav-list-item">
-					<a href="" class="nav-list-link">Projects</a>
-				</li>
-				<li class="nav-list-item">
-					<a href="" class="nav-list-link">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 
+		<!-- Start of wrapper -->
+		<div class="wrapper">
 
-	<main>
+			<!-- Start of nav -->
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item">
+						<a href="#about" class="nav-list-link">About</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#projects" class="nav-list-link">Projects</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#" class="nav-list-link">Contact</a>
+					</li>
+				</ul>
+			</nav> <!-- End of nav -->
+		</div> <!-- End of wrapper -->
+
+		<!-- Start of header/icon text block -->
+		<div class="header-block">
+			<h2 class="header-block-heading-secondary">Andrew Shearer</h2>
+			<h1 class="header-block-heading-primary">Web Developer</h1>
+
+			<!-- Start of icon block -->
+			<div class="icon-block">
+				<a href="#" class="icon-block-link">
+					<i class="fas fa-file-pdf"></i>
+				</a>
+				<a href="#" class="icon-block-link">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="#" class="icon-block-link">
+					<i class="fab fa-github"></i>
+				</a>
+			</div> <!-- End of icon block -->
+		</div> <!-- End of header/icon text block -->
+
+		<!-- Start of arrow -->
+		<div class="header-arrow">
+			<a href="#about">
+				<i class="fas fa-sort-down header-arrow-icon"></i>
+			</a>
+		</div> <!-- End of arrow -->
+
+	</header> <!-- End of header -->
+
+	<main class="main">
+
+		<!-- Start of About Section -->
+		<section class="about" id="about">
+			<h2 class="heading-section">About Me</h2>
+
+			<!-- Start of About Block -->
+			<div class="content-block content-block-reverse">
+				<div class="content-block-text">
+					<p class="para para-right">I'm a web developer with a passion for design from New Westminster, BC. I've also
+						built a few resources to help out fellow web developers.</p>
+					<p class="para para-right">With web development, it was truly love at first site. I spend each and everyday
+						either coding or designing. In fact, I quit my job so I could focus on learning it full time. If that
+						doesn't scream passion, then I don't know what does.</p>
+				</div>
+				<div class="content-block-img">
+					<!-- Photo from Unsplash: https://unsplash.com/photos/K63kFXnLu-s -->
+					<!-- Photographer: Komal Brar -->
+					<img src="img/new-west-cropped-16x9.jpg" alt="New Westminster W Containers" class="content-block-img-content">
+				</div>
+			</div> <!-- End of About Block -->
+		</section> <!-- End of About Section -->
+
+		<hr class="divider">
+
+		<!-- Start of Projects Section -->
+		<section class="projects" id="projects">
+			<h2 class="heading-section">My Work</h2>
+
+			<!-- Start of AngelMaker Block -->
+			<div class="content-block content-block-regular">
+				<div class="content-block-text">
+					<h2 class="heading-block heading-block-left"><span class="pink">AngelMaker</span></h2>
+					<p class="para para-left">This is a site a I designed and built for a local deathcore band named AngelMaker.
+					</p>
+					<div class="icon-block icon-block-left icon-block-proj">
+						<a href="#" class="icon-block-link">
+							<i class="fas fa-desktop"></i>
+						</a>
+						<a href="#" class="icon-block-link">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="content-block-img">
+					<img src="img/AngelMaker.jpg" alt="AngelMaker site landing page screenshot" class="content-block-img-content">
+				</div>
+			</div> <!-- End of AngelMaker Block -->
+
+			<!-- Start of Bliss Car Share Block -->
+			<div class="content-block content-block-reverse">
+				<div class="content-block-text">
+					<h2 class="heading-block heading-block-right"><span class="blue">Bliss Car Share</span></h2>
+					<p class="para para-right">This is a fictional startup idea that I came up with. It is based off of Modo and
+						Evo, but with high-end luxury/supercars.</p>
+					<div class="icon-block icon-block-proj">
+						<a href="#" class="icon-block-link">
+							<i class="fas fa-desktop"></i>
+						</a>
+						<a href="#" class="icon-block-link">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="content-block-img">
+					<img src="img/bliss-car-share.jpg" alt="Bliss Care Share site landing page screenshot"
+						class="content-block-img-content">
+				</div>
+			</div> <!-- End of Bliss Car Share Block -->
+
+			<!-- Start of Maple SASS Block -->
+			<div class="content-block content-block-regular">
+				<div class="content-block-text">
+					<h2 class="heading-block heading-block-left"><span class="pink">Maple SASS</span></h2>
+					<p class="para para-left">Maple is a basic SASS/SCSS boilerplate designed to get you up and running building
+						your next project asap. Also included are ESLint, Prettier, and Jest.</p>
+					<div class="icon-block icon-block-left icon-block-proj">
+						<a href="#" class="icon-block-link">
+							<i class="fas fa-desktop"></i>
+						</a>
+						<a href="#" class="icon-block-link">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="content-block-img">
+					<img src="img/maple-sass.jpg" alt="Maple SASS logo banner" class="content-block-img-content">
+				</div>
+			</div> <!-- End of Maple SASS Block -->
+
+			<!-- Start of JavaScript Handbook Block -->
+			<div class="content-block content-block-reverse">
+				<div class="content-block-text">
+					<h2 class="heading-block heading-block-right"><span class="yellow">JavaScript Handbook</span></h2>
+					<p class="para para-right">This is a collection of all my notes for anything relating to vanilla JavaScript.
+						Also included are small and large projects for reference/inspiration.</p>
+					<div class="icon-block icon-block-proj">
+						<a href="#" class="icon-block-link">
+							<i class="fas fa-desktop"></i>
+						</a>
+						<a href="#" class="icon-block-link">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="content-block-img">
+					<img src="img/javascript-handbook.jpg" alt="JavaScript Handbook logo banner"
+						class="content-block-img-content">
+				</div>
+			</div> <!-- End of JavaScript Handbook Block -->
+
+			<!-- Start of Startup Generator Block -->
+			<div class="content-block content-block-regular">
+				<div class="content-block-text">
+					<h2 class="heading-block heading-block-left"><span class="blue">Startup Generator</span></h2>
+					<p class="para para-left">Maple is a basic SASS/SCSS boilerplate designed to get you up and running building
+						your next project asap. Also included are ESLint, Prettier, and Jest.</p>
+					<div class="icon-block icon-block-left icon-block-proj">
+						<a href="#" class="icon-block-link">
+							<i class="fas fa-desktop"></i>
+						</a>
+						<a href="#" class="icon-block-link">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="content-block-img">
+					<img src="img/maple-sass.jpg" alt="Maple SASS logo banner" class="content-block-img-content">
+				</div>
+			</div> <!-- End of Maple SASS Block -->
+
+		</section> <!-- End of Projects Sections -->
+
+		<hr class="divider">
+
+		<!-- Start of Skills Sections -->
+		<section class="skills">
+			<h2 class="heading-section">What I Use</h2>
+			<div class="skills-block">
+				<a href="https://www.adobe.com/ca/products/xd.html" class="skills-block-link" target="_blank"
+					rel="noopener">Adobe XD</a>
+				<a href="https://www.adobe.com/ca/products/photoshop.html" class="skills-block-link" target="_blank"
+					rel="noopener">Adobe Photoshop</a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web" class="skills-block-link" target="_blank"
+					rel="noopener">HTML / CSS</a>
+				<a href="https://sass-lang.com/" class="skills-block-link" target="_blank" rel="noopener">SASS</a>
+				<a href="https://getbootstrap.com/" class="skills-block-link" target="_blank" rel="noopener">Bootstrap</a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skills-block-link" target="_blank"
+					rel="noopener">JavaScript</a>
+			</div>
+
+			<h2 class="heading-section">What I'm Learning</h2>
+			<div class="skills-block">
+				<a href="https://reactjs.org/" class="skills-block-link" target="_blank" rel="noopener">React.js</a>
+				<a href="https://www.gatsbyjs.org/" class="skills-block-link" target="_blank" rel="noopener">Gatsby.js</a>
+				<a href="https://nodejs.org/en/" class="skills-block-link" target="_blank" rel="noopener">Node.js</a>
+				<a href="https://expressjs.com/" class="skills-block-link" target="_blank" rel="noopener">Express.js</a>
+				<a href="https://www.postgresql.org/" class="skills-block-link" target="_blank" rel="noopener">SQL /
+					PostgreSQL</a>
+				<a href="https://www.typescriptlang.org/" class="skills-block-link" target="_blank"
+					rel="noopener">Typescript</a>
+			</div>
+		</section> <!-- End of Skills Sections -->
+
+		<hr class="divider">
+
+		<!-- Start of Contact Section -->
 		
+		<!-- End of Contact Section -->
+
 	</main>
 
 
-	<footer>
+	<footer class="footer">
 
 	</footer>
-	
+
 	<!-- **** LEGACY BROWSER SUPPORT SCRIPTS **** -->
 	<!-- respond.js by scottjehl, found here: https://www.jsdelivr.com/package/npm/respond.js?path=dest -->
 	<script src="js/respond.min.js"></script>

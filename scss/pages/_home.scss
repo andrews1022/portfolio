@@ -1,4 +1,49 @@
-// Any styles specific the home/landing page should go here
-// Margin/padding for different sections, for example
+.wrapper {
+  padding: $sctn-pad-sm-mbl;
+}
 
-// Any further pages in HTML and/or Sass will have to be added by you
+.content {
+  
+  &-block {
+    margin-bottom: 5rem;
+
+    &-regular{
+      @include respond(tab-land) {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &-reverse {
+      @include respond(tab-land) {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+
+    &-text {
+      text-align: center;
+
+      @include respond(tab-land) {
+        text-align: right;
+      }
+    }
+
+    &-img-content {
+      @include imgBorder;
+
+      margin-top: 2rem;
+      transform: scale(0.88);
+      transition: $transit-standard;
+
+      &:hover {
+        outline-offset: 2.75rem;
+        transform: scale(0.9);
+      }
+    }
+  }
+}
