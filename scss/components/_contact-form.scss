@@ -1,0 +1,71 @@
+// font-family: $txt-main;
+
+.contact {
+
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: 4rem 0;
+
+    &-left {
+      padding: 2rem;
+    }
+  }
+
+  &-form {
+    @include imgBorder;
+    display: inline-block;
+
+    &-group {
+      margin-bottom: 1rem;
+
+      &-label {
+        display: block;
+        font-size: 1.75rem;
+      }
+
+      &-input {
+        @include formInputStyles;
+
+        width: 40rem;
+      }
+
+      &-textarea {
+        height: 10rem;
+        min-height: 7rem;
+        max-height: 20rem;
+
+        width: 40rem;
+        min-width: 37rem;
+        max-width: 50rem;
+
+        @include formInputStyles;
+      }
+
+      &-submit {
+        @include buttonStyles;
+
+        background-color: $clr-blk;
+        color: $clr-wht;
+        cursor: pointer;
+        font-family: $txt-main;
+        margin: 0;
+        transition: $transit-standard;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $clr-wht;
+          color: $clr-blk;
+        }
+      }
+
+      &-send {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

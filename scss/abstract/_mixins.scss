@@ -140,6 +140,19 @@
 	outline-offset: 2.25rem;
 }
 
+// Hollow Button Styling
+@mixin buttonStyles {
+	border: 2px solid $clr-wht;
+	font-size: 1.75rem;
+	padding: $btn-pad;
+	transition: $transit-standard;
+}
+
+@mixin formInputStyles {
+	font-family: $txt-main;
+	font-size: 1.25rem;
+	padding: 0.5rem;
+}
 
 /* MEDIA QUERY MANAGER
 

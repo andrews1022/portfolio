@@ -1,15 +1,25 @@
 .icon-block {
-  font-size: 2rem;
-  margin-bottom: 3rem;
   float: right;
-
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 
   &-link {
-    margin-left: 0.75rem;
     transition: $transit-standard;
 
-    @include respond(laptop) {
-      margin-left: 1rem;
+    &-left {
+      margin-left: 0.75rem;
+
+      @include respond(tab-land) {
+        margin-left: 1rem;
+      }
+    }
+
+    &-right {
+      margin-right: 0.75rem;
+
+      @include respond(tab-land) {
+        margin-right: 1rem;
+      }
     }
 
     &:hover {
@@ -26,5 +36,9 @@
       float: none;
       margin: 3rem auto;
     }
+  }
+
+  &-contact {
+    float: left;
   }
 }

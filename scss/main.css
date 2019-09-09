@@ -23,6 +23,79 @@ $breakpoint argument choices:
 Each em amount is the min-width listed above divided 16
 For example, for tab-port, 768px / 16px = 48em
 */
+.header-block-heading-primary {
+  position: relative;
+}
+
+.header-block-heading-primary::before, .header-block-heading-primary::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  content: "Web Developer";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.header-block-heading-primary::before {
+  -webkit-animation: glitch-effect 2s infinite;
+          animation: glitch-effect 2s infinite;
+  color: red;
+}
+
+.header-block-heading-primary::after {
+  -webkit-animation: glitch-effect 1s infinite;
+          animation: glitch-effect 1s infinite;
+  color: blue;
+}
+
+@-webkit-keyframes glitch-effect {
+  0% {
+    left: -3px;
+    top: -3px;
+  }
+  25% {
+    left: 3px;
+    top: 0px;
+  }
+  50% {
+    left: -2px;
+    top: 3px;
+  }
+  75% {
+    left: 2px;
+    top: -2px;
+  }
+  100% {
+    left: 0px;
+    top: -3px;
+  }
+}
+
+@keyframes glitch-effect {
+  0% {
+    left: -3px;
+    top: -3px;
+  }
+  25% {
+    left: 3px;
+    top: 0px;
+  }
+  50% {
+    left: -2px;
+    top: 3px;
+  }
+  75% {
+    left: 2px;
+    top: -2px;
+  }
+  100% {
+    left: 0px;
+    top: -3px;
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -172,106 +245,6 @@ ol {
   color: #ffe98c;
 }
 
-.u-center-text {
-  text-align: center !important;
-}
-
-.u-margin-center {
-  margin: 0 auto;
-}
-
-.u-heading-primary {
-  font-size: 3.25rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-primary {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-primary {
-    font-size: 4.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-primary {
-    font-size: 5.5rem;
-  }
-}
-
-.u-heading-secondary {
-  font-size: 2.5rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-secondary {
-    font-size: 3.25rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-secondary {
-    font-size: 3.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-secondary {
-    font-size: 4.25rem;
-  }
-}
-
-.u-heading-tertiary {
-  font-size: 2.25rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-tertiary {
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-tertiary {
-    font-size: 2.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-tertiary {
-    font-size: 3rem;
-  }
-}
-
-.u-heading-quaternary {
-  font-size: 1.75rem;
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-quaternary {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-quaternary {
-    font-size: 2.5rem;
-  }
-}
-
-.u-paragraph {
-  font-size: 1.6rem;
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-paragraph {
-    font-size: 1.8rem;
-  }
-}
-
 .skills-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,11 +264,11 @@ ol {
 .skills-block-link:link, .skills-block-link:visited {
   border: 2px solid #fff;
   font-size: 1.75rem;
-  margin: 1rem 2rem;
   padding: 0.75rem 2.25rem;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;
+  margin: 1rem 2rem;
 }
 
 .skills-block-link:hover, .skills-block-link:active, .skills-block-link:focus {
@@ -307,6 +280,90 @@ ol {
           transform: translateY(-4px);
 }
 
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 4rem 0;
+}
+
+.contact-block-left {
+  padding: 2rem;
+}
+
+.contact-form {
+  outline: 15px solid white;
+  outline-offset: 2.25rem;
+  display: inline-block;
+}
+
+.contact-form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form-group-label {
+  display: block;
+  font-size: 1.75rem;
+}
+
+.contact-form-group-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: 40rem;
+}
+
+.contact-form-group-textarea {
+  height: 10rem;
+  min-height: 7rem;
+  max-height: 20rem;
+  width: 40rem;
+  min-width: 37rem;
+  max-width: 50rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.contact-form-group-submit {
+  border: 2px solid #fff;
+  font-size: 1.75rem;
+  padding: 0.75rem 2.25rem;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  transition: all 250ms;
+}
+
+.contact-form-group-submit:hover, .contact-form-group-submit:active, .contact-form-group-submit:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-form-group-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .divider {
   background-color: #cc3a4f;
   border: none;
@@ -316,21 +373,34 @@ ol {
 }
 
 .icon-block {
-  font-size: 2rem;
-  margin-bottom: 3rem;
   float: right;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .icon-block-link {
-  margin-left: 0.75rem;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;
 }
 
-@media only screen and (min-width: 81.25em) {
-  .icon-block-link {
+.icon-block-link-left {
+  margin-left: 0.75rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .icon-block-link-left {
     margin-left: 1rem;
+  }
+}
+
+.icon-block-link-right {
+  margin-right: 0.75rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .icon-block-link-right {
+    margin-right: 1rem;
   }
 }
 
@@ -347,6 +417,10 @@ ol {
     float: none;
     margin: 3rem auto;
   }
+}
+
+.icon-block-contact {
+  float: left;
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -397,6 +471,14 @@ ol {
   color: #cc3a4f;
 }
 
+.footer {
+  padding: 2rem 0;
+}
+
+.footer > * {
+  font-size: 1.25rem;
+}
+
 .header {
   background: url("../img/hero.jpg") no-repeat top center;
   background-size: cover;
@@ -445,6 +527,7 @@ ol {
   .header-block-heading-primary {
     font-size: 3rem;
     font-weight: 900;
+    position: relative;
   }
 }
 
@@ -505,10 +588,10 @@ ol {
 
 .header-arrow-icon {
   font-size: 2.5rem;
+  opacity: 0.75;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;
-  opacity: 0.75;
 }
 
 .header-arrow-icon:hover {

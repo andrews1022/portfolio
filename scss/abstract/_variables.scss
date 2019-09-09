@@ -79,11 +79,15 @@ $lh-hg: 1.4;
 $lh-msv: 1.5;
 
 // ------------------------- FONT-FAMILY -------------------------
-$txt-main: 'Montserrat', sans-serif;
+$txt-main: 'Montserrat',
+sans-serif;
 
 // ------------------------- LIST DECORATION -------------------------
 // Removes those annoying bullets from lists
 $list-no-dec: none;
+
+// ------------------------- BUTTON PADDING -------------------------
+$btn-pad: 0.75rem 2.25rem;
 
 // ------------------------- WRAPPERS -------------------------
 $wrap-tny-1: 50%;
@@ -191,7 +195,7 @@ $sz-msv-5: 14rem;
 $sz-msv-6: 15rem;
 
 // ------------------------- TRANSITIONS -------------------------
-$transit-standard: all 250ms; 
+$transit-standard: all 250ms;
 
 $transit-quick-1: all 200ms;
 $transit-quick-2: all 300ms;

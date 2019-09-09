@@ -1,0 +1,55 @@
+.header-block-heading-primary {
+  // animation: glitch-effect 2s infinite;
+  position: relative;
+  
+  &::before,
+  &::after  {
+		position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+
+    content: "Web Developer";
+    height: 100%;
+		width: 100%;
+    z-index: -1;
+  }
+
+  &::before {
+    animation: glitch-effect 2s infinite;
+    color: red;
+  }
+
+  &::after {
+    animation: glitch-effect 1s infinite;
+    color: blue;
+  }
+}
+
+@keyframes glitch-effect {
+  0% {
+    left: -3px;
+    top: -3px;
+  }
+
+  25% {
+    left: 3px;
+    top: 0px;
+  }
+
+  50% {
+    left: -2px;
+    top: 3px;
+  }
+
+  75% {
+    left: 2px;
+    top: -2px;
+  }
+
+  100% {
+    left: 0px;
+    top: -3px;
+  }
+}
+

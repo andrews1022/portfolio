@@ -1,1 +1,7 @@
-// Styles specific to the footer should go here
+.footer {
+  padding: 2rem 0;
+
+  & > * {
+    font-size: 1.25rem;
+  }
+}

@@ -38,6 +38,7 @@
       &-heading-primary {
         font-size: 3rem;
         font-weight: 900;
+        position: relative;
 
         @include respond(laptop) {
           font-size: 3.5rem;
@@ -56,7 +57,7 @@
     // Positioning text box at larger sizes
     @include respond(tab-land) {
       right: 12%;
-      top: 13%;  
+      top: 13%;
     }
 
     @include respond(laptop) {
@@ -83,8 +84,8 @@
 
     &-icon {
       font-size: 2.5rem;
-      transition: $transit-standard;
       opacity: 0.75;
+      transition: $transit-standard;
 
       &:hover {
         opacity: 1;
