@@ -62,3 +62,32 @@
 .yellow {
   color: color(quin);
 }
+
+.redacted {
+  position: relative;
+  white-space: pre;
+
+  &::after {
+    position: absolute;
+    left: -5%;
+    top: 37%;
+
+    content: "";
+    height: 40%;
+    width: 0%;
+
+    background: $clr-blk;
+    transition: ease-in-out 150ms;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      visibility: visible;
+      width: 110%;
+    }
+  }
+}

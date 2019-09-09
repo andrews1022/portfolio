@@ -23,33 +23,6 @@ $breakpoint argument choices:
 Each em amount is the min-width listed above divided 16
 For example, for tab-port, 768px / 16px = 48em
 */
-.header-block-heading-primary {
-  position: relative;
-}
-
-.header-block-heading-primary::before, .header-block-heading-primary::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  content: "Web Developer";
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-.header-block-heading-primary::before {
-  -webkit-animation: glitch-effect 2s infinite;
-          animation: glitch-effect 2s infinite;
-  color: red;
-}
-
-.header-block-heading-primary::after {
-  -webkit-animation: glitch-effect 1s infinite;
-          animation: glitch-effect 1s infinite;
-  color: blue;
-}
-
 @-webkit-keyframes glitch-effect {
   0% {
     left: -3px;
@@ -72,7 +45,6 @@ For example, for tab-port, 768px / 16px = 48em
     top: -3px;
   }
 }
-
 @keyframes glitch-effect {
   0% {
     left: -3px;
@@ -243,6 +215,32 @@ ol {
 
 .yellow {
   color: #ffe98c;
+}
+
+.redacted {
+  position: relative;
+  white-space: pre;
+}
+
+.redacted::after {
+  position: absolute;
+  left: -5%;
+  top: 37%;
+  content: "";
+  height: 40%;
+  width: 0%;
+  background: #000;
+  -webkit-transition: ease-in-out 150ms;
+  -o-transition: ease-in-out 150ms;
+  transition: ease-in-out 150ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.redacted:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 110%;
 }
 
 .skills-block {

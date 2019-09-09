@@ -1,29 +1,3 @@
-.header-block-heading-primary {
-  position: relative;
-
-  &::before,
-  &::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "Web Developer";
-    display: block;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-
-  &::before {
-    color: red;
-    animation: glitch-effect 3s infinite;
-  }
-
-  &::after {
-    color: blue;
-    animation: glitch-effect 2s infinite;
-  }
-}
-
 @keyframes glitch-effect {
   0% {
     left: -3px;
