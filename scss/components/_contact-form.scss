@@ -1,16 +1,15 @@
-// font-family: $txt-main;
-
 .contact {
 
   &-block {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-flow: row wrap;
-    margin: 4rem 0;
+    justify-content: space-evenly;
+
+    margin: size(med) 0;
 
     &-left {
-      padding: 2rem;
+      padding: size(x-sml);
     }
   }
 
@@ -19,11 +18,11 @@
     display: inline-block;
 
     &-group {
-      margin-bottom: 1rem;
+      margin-bottom: size(tny);
 
       &-label {
         display: block;
-        font-size: 1.75rem;
+        font-size: size(x-sml) - 0.25rem;
       }
 
       &-input {
@@ -33,8 +32,8 @@
       }
 
       &-textarea {
-        height: 10rem;
-        min-height: 7rem;
+        height: size(msv);
+        min-height: size(xx-lg);
         max-height: 20rem;
 
         width: 40rem;

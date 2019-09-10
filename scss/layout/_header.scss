@@ -1,10 +1,22 @@
 .header {
   // Photo from Unsplash: https://unsplash.com/photos/RChZT-JlI9g
   // Photographer: Sebastiaan Stam 
-  background: url('../img/hero.jpg') no-repeat top center;
+  background: url('../img/hero-small.jpg') no-repeat top center;
   background-size: cover;
   height: 100vh;
   position: relative;
+
+  // At 1300px, increase picture resolution
+  @include respond(laptop) {
+    background: url('../img/hero-medium.jpg') no-repeat top center;
+    background-size: cover;
+  }
+
+  // At 2500px, increase picture resolution
+  @include respond(desktop-lg) {
+    background: url('../img/hero-large.jpg') no-repeat top center;
+    background-size: cover;
+  }
 
   &-block {
     opacity: 0;
@@ -12,8 +24,8 @@
 
     @include respond(tab-port) {
       position: absolute;
-      right: 2%;
-      top: 13%;
+      right: 3%;
+      top: 14%;
 
       opacity: 1;
       visibility: visible;
@@ -56,23 +68,23 @@
 
     // Positioning text box at larger sizes
     @include respond(tab-land) {
-      right: 12%;
+      right: 13%;
       top: 13%;
     }
 
     @include respond(laptop) {
-      right: 16.5%;
+      right: 17.5%;
       top: 11%;
     }
 
     @include respond(laptop-lg) {
-      right: 18%;
-      top: 10%;
+      right: 17%;
+      top: 14%;
     }
 
     @include respond(desktop) {
       right: 9.5%;
-      top: 8%;
+      top: 9%;
     }
   }
 
@@ -81,6 +93,7 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 15;
 
     &-icon {
       font-size: 2.5rem;

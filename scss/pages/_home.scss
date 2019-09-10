@@ -3,45 +3,43 @@
 }
 
 .content {
-  
-  &-block {
-    margin-bottom: 5rem;
 
-    &-regular{
+  &-block {
+    margin-bottom: size(lg);
+
+    &-regular {
       @include respond(tab-land) {
-        display: flex;
-        align-items: center;
+        @include contentFlex;
+
         flex-direction: row;
-        justify-content: space-between;
       }
     }
 
     &-reverse {
       @include respond(tab-land) {
-        display: flex;
-        align-items: center;
+        @include contentFlex;
+
         flex-direction: row-reverse;
-        justify-content: space-between;
       }
     }
 
     &-text {
-      text-align: center;
+      text-align: $txt-cntr;
 
       @include respond(tab-land) {
-        text-align: right;
+        text-align: $txt-rt;
       }
     }
 
     &-img-content {
       @include imgBorder;
 
-      margin-top: 2rem;
+      margin-top: size(x-sml);
       transform: scale(0.88);
       transition: $transit-standard;
 
       &:hover {
-        outline-offset: 2.75rem;
+        outline-offset: size(sml) - 0.25rem;
         transform: scale(0.9);
       }
     }

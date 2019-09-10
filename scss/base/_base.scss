@@ -4,9 +4,8 @@ html {
 	@include htmlBoxReset;
 
 	font-size: $fnt-sz-def; // Equivalent to 10px
+	overflow-x: hidden;
 	scroll-behavior: smooth;
-
-	// Quick/easy font resizing for various screen-widths based off the Media Query Manager
 
 	// min-width 550px
 	@include respond(mobile-lg) {
@@ -59,10 +58,10 @@ html {
 body {
 	@include defaultFontStyles;
 
-	background-color: #010101;
+	background-color: $clr-blk;
 	color: $clr-wht;
 	font-family: $txt-main;
-	
+
 	text-transform: $txt-lwr;
 }
 

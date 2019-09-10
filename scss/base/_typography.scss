@@ -1,52 +1,52 @@
 .heading {
 
   &-section {
-    font-size: 4.5rem;
-    padding: 3rem 0;
-    text-align: center;
+    font-size: size(med) + 0.5rem;
+    padding: size(3rem) 0;
+    text-align: $txt-cntr;
   }
 
   &-block {
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: size(sml) + 0.5rem;
+    text-align: $txt-cntr;
 
     &-right {
       @include respond(tab-land) {
-        text-align: right;
+        text-align: $txt-rt;
       }
     }
 
     &-left {
       @include respond(tab-land) {
-        text-align: left;
+        text-align: $txt-lft;
       }
     }
   }
 }
 
 .para {
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: size(tny) + 0.5rem;
+  text-align: $txt-cntr;
 
   @include respond (laptop) {
-    font-size: 1.75rem;
+    font-size: size(x-sml) - 0.25rem;
   }
 
   &:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: size(x-sml);
   }
 
   &-right {
     @include respond(tab-land) {
-      margin-left: 2.5rem;
-      text-align: right;
+      margin-left: size(x-sml) + 0.5rem;
+      text-align: $txt-rt;
     }
   }
 
   &-left {
     @include respond(tab-land) {
-      margin-right: 2.5rem;
-      text-align: left;
+      margin-right: size(x-sml) + 0.5rem;
+      text-align: $txt-lft;
     }
   }
 }
@@ -63,31 +63,52 @@
   color: color(quin);
 }
 
-.redacted {
+.header-block-heading-primary {
   position: relative;
-  white-space: pre;
+  z-index: 20;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    content: "Web Developer";
+    z-index: -1;
+  }
 
   &::after {
+    content: "Web Developer";
     position: absolute;
-    left: -5%;
-    top: 37%;
-
-    content: "";
-    height: 40%;
-    width: 0%;
-
-    background: $clr-blk;
-    transition: ease-in-out 150ms;
-
-    opacity: 0;
-    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
-  &:hover {
-    &::after {
-      opacity: 1;
-      visibility: visible;
-      width: 110%;
-    }
+  &::before {
+    color: #ff00c1;
+    animation: glitch-effect 3s infinite;
   }
+
+  &::after {
+    color: #3498db;
+    animation: glitch-effect 2s infinite;
+  }
+
+  &:hover::before {
+    animation: glitch-effect 1s infinite;
+  }
+
+  &:hover::after {
+    animation: glitch-effect 2s infinite;
+  }
+}
+
+.para-form {
+  font-size: size(tny) + 0.25rem;
+  padding-top: size(tny) + 0.5rem;
 }

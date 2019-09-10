@@ -1,4 +1,4 @@
-// ----- COLORS MAP -----
+// --------------- COLORS MAP ---------------
 $colors: (
 	pri: #cc3a4f,		// primary color
 	sec: #5d0b11,		// secondary color
@@ -16,7 +16,7 @@ $colors: (
 // color: lighten(color(sec), 7.5%);
 
 
-// ----- SIZES MAP -----
+// --------------- SIZES MAP ---------------
 $sizes: (
 	x-tny: 0.5rem,	// extra-tiny
 	tny: 1rem,			// tiny
@@ -41,7 +41,7 @@ $sizes: (
 // font-size: size(x-lg) + 2rem;
 
 
-// ----- WRAPPER MAP -----
+// --------------- WRAPPER MAP ---------------
 $wrappers: (
 	x-tny: 50%,		// extra-tiny
 	tny: 55%,			// tiny

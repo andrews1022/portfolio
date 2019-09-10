@@ -6,7 +6,7 @@
   &-link:visited {
     @include buttonStyles;
 
-    margin: 1rem 2rem;
+    margin: size(tny) size(x-sml);
   }
 
   &-link:hover,
@@ -14,7 +14,7 @@
   &-link:focus {
     background-color: $clr-wht;
     color: $clr-blk;
-    font-weight: 400;
+    font-weight: $fw-reg;
     transform: translateY(-4px);
   }
 }

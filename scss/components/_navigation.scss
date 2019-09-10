@@ -1,7 +1,7 @@
 .nav {
 
   @include respond(tab-land) {
-    padding-right: 10rem;
+    padding-right: size(msv);
   }
 
   &-list {
@@ -13,15 +13,15 @@
     &-item {
       font-size: size(tny) + 0.25rem;
       margin-left: size(tny);
-      
 
-      &:not(:last-child){
-        border-right: 1px solid white;
+
+      &:not(:last-child) {
+        border-right: 1px solid $clr-wht;
         padding-right: size(tny);
       }
 
       @include respond(laptop) {
-        font-size: 1.5rem;
+        font-size: size(tny) + 0.5rem;
       }
     }
 
