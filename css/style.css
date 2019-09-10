@@ -28,40 +28,49 @@ For example, for tab-port, 768px / 16px = 48em
     left: -3px;
     top: -3px;
   }
+
   25% {
     left: 3px;
     top: 0px;
   }
+
   50% {
     left: -2px;
     top: 3px;
   }
+
   75% {
     left: 2px;
     top: -2px;
   }
+
   100% {
     left: 0px;
     top: -3px;
   }
 }
+
 @keyframes glitch-effect {
   0% {
     left: -3px;
     top: -3px;
   }
+
   25% {
     left: 3px;
     top: 0px;
   }
+
   50% {
     left: -2px;
     top: 3px;
   }
+
   75% {
     left: 2px;
     top: -2px;
   }
+
   100% {
     left: 0px;
     top: -3px;
@@ -70,7 +79,7 @@ For example, for tab-port, 768px / 16px = 48em
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -122,7 +131,7 @@ html {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -246,23 +255,23 @@ ol {
 .header-block-heading-primary::before {
   color: #ff00c1;
   -webkit-animation: glitch-effect 3s infinite;
-          animation: glitch-effect 3s infinite;
+  animation: glitch-effect 3s infinite;
 }
 
 .header-block-heading-primary::after {
   color: #3498db;
   -webkit-animation: glitch-effect 2s infinite;
-          animation: glitch-effect 2s infinite;
+  animation: glitch-effect 2s infinite;
 }
 
 .header-block-heading-primary:hover::before {
   -webkit-animation: glitch-effect 1s infinite;
-          animation: glitch-effect 1s infinite;
+  animation: glitch-effect 1s infinite;
 }
 
 .header-block-heading-primary:hover::after {
   -webkit-animation: glitch-effect 2s infinite;
-          animation: glitch-effect 2s infinite;
+  animation: glitch-effect 2s infinite;
 }
 
 .para-form {
@@ -275,18 +284,19 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
-.skills-block-link:link, .skills-block-link:visited {
+.skills-block-link:link,
+.skills-block-link:visited {
   border: 2px solid #fff;
   font-size: 1.75rem;
   padding: 0.75rem 2.25rem;
@@ -296,13 +306,15 @@ ol {
   margin: 1rem 2rem;
 }
 
-.skills-block-link:hover, .skills-block-link:active, .skills-block-link:focus {
+.skills-block-link:hover,
+.skills-block-link:active,
+.skills-block-link:focus {
   background-color: #fff;
   color: #000;
   font-weight: 400;
   -webkit-transform: translateY(-4px);
-      -ms-transform: translateY(-4px);
-          transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .contact-block {
@@ -310,15 +322,15 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin: 4rem 0;
 }
 
@@ -345,19 +357,47 @@ ol {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   padding: 0.5rem;
-  width: 40rem;
+  width: 25rem;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .contact-form-group-input {
+    width: 35rem;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .contact-form-group-input {
+    width: 40rem;
+  }
 }
 
 .contact-form-group-textarea {
-  height: 10rem;
-  min-height: 7rem;
-  max-height: 20rem;
-  width: 40rem;
-  min-width: 37rem;
-  max-width: 50rem;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   padding: 0.5rem;
+  height: 10rem;
+  min-height: 8rem;
+  max-height: 12rem;
+  width: 25rem;
+  min-width: 23rem;
+  max-width: 27rem;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .contact-form-group-textarea {
+    width: 35rem;
+    min-width: 33rem;
+    max-width: 35rem;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .contact-form-group-textarea {
+    width: 40rem;
+    min-width: 37rem;
+    max-width: 43rem;
+  }
 }
 
 .contact-form-group-submit {
@@ -375,7 +415,9 @@ ol {
   transition: all 250ms;
 }
 
-.contact-form-group-submit:hover, .contact-form-group-submit:active, .contact-form-group-submit:focus {
+.contact-form-group-submit:hover,
+.contact-form-group-submit:active,
+.contact-form-group-submit:focus {
   background-color: #fff;
   color: #000;
 }
@@ -385,8 +427,8 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .divider {
@@ -459,15 +501,15 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .nav-list-item {
@@ -500,7 +542,7 @@ ol {
   padding: 2rem 0;
 }
 
-.footer > * {
+.footer>* {
   font-size: 1.25rem;
 }
 
@@ -538,6 +580,7 @@ ol {
     opacity: 1;
     visibility: visible;
   }
+
   .header-block-heading-secondary {
     font-size: 1.75rem;
     font-weight: 400;
@@ -621,8 +664,8 @@ ol {
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 15;
 }
 
@@ -637,8 +680,8 @@ ol {
 .header-arrow-icon:hover {
   opacity: 1;
   -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 @media only screen and (min-width: 81.25em) {
@@ -673,15 +716,15 @@ ol {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -691,15 +734,15 @@ ol {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 }
 
@@ -718,8 +761,8 @@ ol {
   outline-offset: 1.75rem;
   margin-top: 2rem;
   -webkit-transform: scale(0.88);
-      -ms-transform: scale(0.88);
-          transform: scale(0.88);
+  -ms-transform: scale(0.88);
+  transform: scale(0.88);
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;
@@ -728,7 +771,8 @@ ol {
 .content-block-img-content:hover {
   outline-offset: 2.75rem;
   -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
+
 /*# sourceMappingURL=main.css.map */

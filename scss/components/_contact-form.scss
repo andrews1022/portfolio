@@ -28,19 +28,39 @@
       &-input {
         @include formInputStyles;
 
-        width: 40rem;
+        width: 25rem;
+
+        @include respond(tab-port) {
+          width: 35rem;
+        }
+
+        @include respond(laptop) {
+          width: 40rem;
+        }
       }
 
       &-textarea {
-        height: size(msv);
-        min-height: size(xx-lg);
-        max-height: 20rem;
-
-        width: 40rem;
-        min-width: 37rem;
-        max-width: 50rem;
-
         @include formInputStyles;
+
+        height: size(msv);
+        min-height: size(hg);
+        max-height: 12rem;
+
+        width: 25rem;
+        min-width: 23rem;
+        max-width: 27rem;
+
+        @include respond(tab-port) {
+          width: 35rem;
+          min-width: 33rem;
+          max-width: 35rem;
+        }
+
+        @include respond(laptop) {
+          width: 40rem;
+          min-width: 37rem;
+          max-width: 43rem;
+        }
       }
 
       &-submit {
