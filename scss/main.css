@@ -165,7 +165,7 @@ ol {
 
 .heading-section {
   font-size: 4.5rem;
-  padding: 0;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -213,6 +213,36 @@ ol {
     margin-right: 2.5rem;
     text-align: left;
   }
+}
+
+.para-link-ang:link,
+.para-link-ang:visited {
+  border-bottom: 2px solid #cc3a4f;
+  padding-bottom: 0.25rem;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.para-link-ang:hover,
+.para-link-ang:active,
+.para-link-ang:focus {
+  padding-bottom: 0.4rem;
+}
+
+.para-link-car:link,
+.para-link-car:visited {
+  border-bottom: 2px solid #626a90;
+  padding-bottom: 0.25rem;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.para-link-car:hover,
+.para-link-car:active,
+.para-link-car:focus {
+  padding-bottom: 0.4rem;
 }
 
 .pink {
@@ -534,7 +564,9 @@ ol {
   transition: all 250ms;
 }
 
-.nav-list-link:hover {
+.nav-list-link:hover,
+.nav-list-link:active,
+.nav-list-link:focus {
   color: #cc3a4f;
 }
 
@@ -677,7 +709,9 @@ ol {
   transition: all 250ms;
 }
 
-.header-arrow-icon:hover {
+.header-arrow-icon:hover,
+.header-arrow-icon:active,
+.header-arrow-icon:focus {
   opacity: 1;
   -webkit-transform: translateY(4px);
   -ms-transform: translateY(4px);

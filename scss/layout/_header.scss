@@ -31,37 +31,37 @@
       visibility: visible;
 
       &-heading-secondary {
-        font-size: 1.75rem;
+        font-size: size(x-sml) - 0.25rem;
         font-weight: 400;
 
         @include respond(laptop) {
-          font-size: 2rem;
+          font-size: size(x-sml);
         }
 
         @include respond(laptop-lg) {
-          font-size: 2.25rem;
+          font-size: size(x-sml) + 0.25rem;
         }
 
         @include respond(desktop) {
-          font-size: 3rem;
+          font-size: size(sml);
         }
       }
 
       &-heading-primary {
-        font-size: 3rem;
-        font-weight: 900;
+        font-size: size(sml);
+        font-weight: $fw-black;
         position: relative;
 
         @include respond(laptop) {
-          font-size: 3.5rem;
+          font-size: size(sml) + 0.5rem;
         }
 
         @include respond(laptop-lg) {
-          font-size: 4.25rem;
+          font-size: size(med) + 0.25rem;
         }
 
         @include respond(desktop) {
-          font-size: 6.5rem;
+          font-size: size(x-lg) + 0.5rem;
         }
       }
     }
@@ -96,21 +96,23 @@
     z-index: 15;
 
     &-icon {
-      font-size: 2.5rem;
+      font-size: size(x-sml) + 0.5rem;
       opacity: 0.75;
       transition: $transit-standard;
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         opacity: 1;
         transform: translateY(4px);
       }
 
       @include respond(laptop) {
-        font-size: 2.75rem;
+        font-size: size(sml) - 0.25rem;
       }
 
       @include respond(desktop) {
-        font-size: 3rem;
+        font-size: size(sml);
       }
     }
   }

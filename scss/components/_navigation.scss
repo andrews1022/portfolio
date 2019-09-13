@@ -28,7 +28,9 @@
     &-link {
       transition: $transit-standard;
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         color: color(pri);
       }
     }

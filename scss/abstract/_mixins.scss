@@ -65,6 +65,22 @@
 	justify-content: space-between;
 }
 
+@mixin paraLinkStyles($link-color: #fff) {
+	&:link,
+	&:visited {
+		border-bottom: 2px solid $link-color;
+		padding-bottom: 0.25rem;
+		transition: $transit-standard;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		padding-bottom: 0.4rem;
+	}
+}
+
+
 /* MEDIA QUERY MANAGER
 
 $breakpoint argument choices:

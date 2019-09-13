@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Portfolio for web developer Andrew Shearer">
-	<title>Andrew Shearer Web Developer Portfolio</title>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,900&display=swap" rel="stylesheet">
@@ -21,8 +20,9 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
 	<!-- Master CSS -->
-	<!-- <link rel="stylesheet" type="text/css" href="scss/main.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="scss/main.css">
+
+	<title>Andrew Shearer Web Developer Portfolio</title>
 
 </head>
 
@@ -38,10 +38,10 @@
 			<nav class="nav" data-aos="fade-right">
 				<ul class="nav-list">
 					<li class="nav-list-item">
-						<a href="#about" class="nav-list-link">About</a>
+						<a href="#projects" class="nav-list-link">Projects</a>
 					</li>
 					<li class="nav-list-item">
-						<a href="#projects" class="nav-list-link">Projects</a>
+						<a href="#about" class="nav-list-link">About</a>
 					</li>
 					<li class="nav-list-item">
 						<a href="#contact" class="nav-list-link">Contact</a>
@@ -57,16 +57,13 @@
 
 			<!-- Start of icon block -->
 			<div class="icon-block">
-				<a href="docs/resume.pdf" class="icon-block-link icon-block-link-left"
-						target="_blank" rel="noopener">
+				<a class="icon-block-link icon-block-link-left" target="_blank" rel="noopener" href="docs/resume.pdf">
 					<i class="fas fa-file-pdf"></i>
 				</a>
-				<a href="https://www.linkedin.com/in/andrew-shearer-webdev/" class="icon-block-link icon-block-link-left"
-						target="_blank" rel="noopener">
+				<a class="icon-block-link icon-block-link-left" target="_blank" rel="noopener" href="https://www.linkedin.com/in/andrew-shearer-webdev/" >
 					<i class="fab fa-linkedin"></i>
 				</a>
-				<a href="https://github.com/andrews1022" class="icon-block-link icon-block-link-left"
-						target="_blank" rel="noopener">
+				<a class="icon-block-link icon-block-link-left" target="_blank" rel="noopener" href="https://github.com/andrews1022">
 					<i class="fab fa-github"></i>
 				</a>
 			</div> <!-- End of icon block -->
@@ -74,7 +71,7 @@
 
 		<!-- Start of arrow -->
 		<div class="header-arrow">
-			<a href="#about">
+			<a href="#projects">
 				<i class="fas fa-sort-down header-arrow-icon"></i>
 			</a>
 		</div> <!-- End of arrow -->
@@ -82,26 +79,6 @@
 	</header> <!-- End of header -->
 
 	<main class="main">
-
-		<!-- Start of About Section -->
-		<section class="about" id="about">
-			<h2 class="heading-section" data-aos="fade-down">About Me</h2>
-
-			<!-- Start of About Block -->
-			<div class="content-block content-block-reverse">
-				<div class="content-block-text" data-aos="fade-left">
-					<p class="para para-right">I'm a web developer with a passion for design from New Westminster, BC. I've also built a few resources to help out fellow web developers.</p>
-					<p class="para para-right">With web development, it was truly love at first site. I spend each and everyday either coding or designing. In fact, I quit my job so I could focus on learning it full time. If that doesn't scream passion, then I don't know what does.</p>
-				</div>
-				<div class="content-block-img" data-aos="fade-right">
-					<!-- Photo from Unsplash: https://unsplash.com/photos/K63kFXnLu-s -->
-					<!-- Photographer: Komal Brar -->
-					<img src="img/new-west-cropped-16x9.jpg" alt="New Westminster W Containers" class="content-block-img-content">
-				</div>
-			</div> <!-- End of About Block -->
-		</section> <!-- End of About Section -->
-
-		<hr class="divider" data-aos="fade-down">
 
 		<!-- Start of Projects Section -->
 		<section class="projects" id="projects">
@@ -113,20 +90,20 @@
 					<h2 class="heading-block heading-block-left" data-aos="fade-right">
 						<span class="pink">AngelMaker</span>
 					</h2>
-					<p class="para para-left" data-aos="fade-right">This is a site a I designed and built for a local deathcore band named AngelMaker.</p>
+					<p class="para para-left" data-aos="fade-right">This is a site a I designed and built for a Vancouver deathcore band named 
+						<a class="para-link-ang" target="_blank" rel="noopener" href="https://www.facebook.com/angelmakerband/" >AngelMaker</a>.
+					</p>
 					<div class="icon-block icon-block-left icon-block-proj" data-aos="fade-right">
-						<a href="https://andrews1022.github.io/angelmaker/" class="icon-block-link icon-block-link-right"
-								target="_blank" rel="noopener">
+						<a class="icon-block-link icon-block-link-right" target="_blank" rel="noopener" href="https://andrews1022.github.io/angelmaker/">
 							<i class="fas fa-desktop"></i>
 						</a>
-						<a href="https://github.com/andrews1022/angelmaker" class="icon-block-link icon-block-link-right"
-								target="_blank" rel="noopener">
+						<a class="icon-block-link icon-block-link-right" target="_blank" rel="noopener" href="https://github.com/andrews1022/angelmaker">
 							<i class="fab fa-github"></i>
 						</a>
 					</div>
 				</div>
 				<div class="content-block-img" data-aos="fade-left">
-					<a href="https://andrews1022.github.io/angelmaker/" target="_blank" rel="noopener">
+					<a target="_blank" rel="noopener" href="https://andrews1022.github.io/angelmaker/" >
 						<img src="img/angelmaker.jpg" alt="AngelMaker site landing page screenshot" class="content-block-img-content">
 					</a>
 				</div>
@@ -138,20 +115,25 @@
 					<h2 class="heading-block heading-block-right" data-aos="fade-left">
 						<span class="blue">Bliss Car Share</span>
 					</h2>
-					<p class="para para-right" data-aos="fade-left">This is a fictional startup idea that I came up with. It is based off of Modo and Evo, but with high-end luxury/supercars.</p>
+					<p class="para para-right" data-aos="fade-left">This is a fictional startup idea that I came up with. It is based off of 
+						<a class="para-link-car" target="_blank" rel="noopener" href="https://www.modo.coop/">Modo</a> 
+						and 
+						<a class="para-link-car" target="_blank" rel="noopener" href="https://www.evo.ca/">Evo</a>, 
+						but with high-end luxury/supercars.
+					</p>
 					<div class="icon-block icon-block-proj" data-aos="fade-left">
-						<a href="https://andrews1022.github.io/bliss-car-share-redesign/" class="icon-block-link icon-block-link-left"
-								target="_blank" rel="noopener">
+						<a class="icon-block-link icon-block-link-left" target="_blank" rel="noopener" 
+								href="https://andrews1022.github.io/bliss-car-share-redesign/"></a>
 							<i class="fas fa-desktop"></i>
 						</a>
-						<a href="https://github.com/andrews1022/bliss-car-share-redesign" class="icon-block-link icon-block-link-left"
-								target="_blank" rel="noopener">
+						<a class="icon-block-link icon-block-link-left" target="_blank" rel="noopener"
+								href="https://github.com/andrews1022/bliss-car-share-redesign"></a>
 							<i class="fab fa-github"></i>
 						</a>
 					</div>
 				</div>
 				<div class="content-block-img" data-aos="fade-right">
-					<a href="https://andrews1022.github.io/bliss-car-share-redesign/" target="_blank" rel="noopener">
+					<a target="_blank" rel="noopener" href="https://andrews1022.github.io/bliss-car-share-redesign/">
 						<img src="img/bliss-car-share.jpg" alt="Bliss Care Share site landing page screenshot" class="content-block-img-content">
 					</a>
 				</div>
@@ -184,17 +166,19 @@
 					<h2 class="heading-block heading-block-right" data-aos="fade-left">
 						<span class="yellow">JavaScript Handbook</span>
 					</h2>
-					<p class="para para-right" data-aos="fade-left">This is a collection of all my notes for anything relating to vanilla JavaScript. Also included are small and large projects for reference/inspiration.</p>
+					<p class="para para-right" data-aos="fade-left">This is a collection of all my notes for anything relating to
+						vanilla JavaScript. Also included are small and large projects for reference/inspiration.</p>
 					<div class="icon-block icon-block-proj" data-aos="fade-left">
 						<a href="https://github.com/andrews1022/javascript-handbook" class="icon-block-link icon-block-link-left"
-								target="_blank" rel="noopener">
+							target="_blank" rel="noopener">
 							<i class="fab fa-github"></i>
 						</a>
 					</div>
 				</div>
 				<div class="content-block-img" data-aos="fade-right">
 					<a href="https://github.com/andrews1022/javascript-handbook" target="_blank" rel="noopener">
-						<img src="img/javascript-handbook.jpg" alt="JavaScript Handbook logo banner" class="content-block-img-content">
+						<img src="img/javascript-handbook.jpg" alt="JavaScript Handbook logo banner"
+							class="content-block-img-content">
 					</a>
 				</div>
 			</div> <!-- End of JavaScript Handbook Block -->
@@ -205,14 +189,15 @@
 					<h2 class="heading-block heading-block-left" data-aos="fade-right">
 						<span class="blue">Startup Generator</span>
 					</h2>
-					<p class="para para-left" data-aos="fade-right">This was a fun little app I put together which randomly generates a startup idea. Use it if you have builders block!</p>
+					<p class="para para-left" data-aos="fade-right">This was a fun little app I put together which randomly
+						generates a startup idea. Use it if you have builders block!</p>
 					<div class="icon-block icon-block-left icon-block-proj" data-aos="fade-right">
 						<a href="https://andrews1022.github.io/startup-generator/" class="icon-block-link icon-block-link-right"
-								target="_blank" rel="noopener">
+							target="_blank" rel="noopener">
 							<i class="fas fa-desktop"></i>
 						</a>
 						<a href="https://github.com/andrews1022/startup-generator" class="icon-block-link icon-block-link-right"
-								target="_blank" rel="noopener">
+							target="_blank" rel="noopener">
 							<i class="fab fa-github"></i>
 						</a>
 					</div>
@@ -226,18 +211,47 @@
 
 		</section> <!-- End of Projects Sections -->
 
+
+
+		<hr class="divider" data-aos="fade-down">
+
+		<!-- Start of About Section -->
+		<section class="about" id="about">
+			<h2 class="heading-section" data-aos="fade-down">About Me</h2>
+
+			<!-- Start of About Block -->
+			<div class="content-block content-block-reverse">
+				<div class="content-block-text" data-aos="fade-left">
+					<p class="para para-right">I'm a web developer with a passion for design from New Westminster, BC. I've also
+						built a few resources to help out fellow web developers.</p>
+					<p class="para para-right">With web development, it was truly love at first site. I spend each and everyday
+						either coding or designing. In fact, I quit my job so I could focus on learning it full time. If that
+						doesn't scream passion, then I don't know what does.</p>
+				</div>
+				<div class="content-block-img" data-aos="fade-right">
+					<!-- Photo from Unsplash: https://unsplash.com/photos/K63kFXnLu-s -->
+					<!-- Photographer: Komal Brar -->
+					<img src="img/new-west-cropped-16x9.jpg" alt="New Westminster W Containers" class="content-block-img-content">
+				</div>
+			</div> <!-- End of About Block -->
+		</section> <!-- End of About Section -->
+
 		<hr class="divider" data-aos="fade-down">
 
 		<!-- Start of Skills Sections -->
 		<section class="skills">
 			<h2 class="heading-section" data-aos="fade-down">What I Use</h2>
 			<div class="skills-block" data-aos="fade-down">
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.adobe.com/ca/products/xd.html">Adobe XD</a>
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.adobe.com/ca/products/photoshop.html">Adobe Photoshop</a>
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web">HTML / CSS</a>
+				<a class="skills-block-link" target="_blank" rel="noopener"
+					href="https://www.adobe.com/ca/products/xd.html">Adobe XD</a>
+				<a class="skills-block-link" target="_blank" rel="noopener"
+					href="https://www.adobe.com/ca/products/photoshop.html">Adobe Photoshop</a>
+				<a class="skills-block-link" target="_blank" rel="noopener"
+					href="https://developer.mozilla.org/en-US/docs/Web">HTML / CSS</a>
 				<a class="skills-block-link" target="_blank" rel="noopener" href="https://sass-lang.com/">SASS</a>
 				<a class="skills-block-link" target="_blank" rel="noopener" href="https://getbootstrap.com/">Bootstrap</a>
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+				<a class="skills-block-link" target="_blank" rel="noopener"
+					href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
 			</div>
 
 			<h2 class="heading-section" data-aos="fade-down">What I'm Learning</h2>
@@ -246,8 +260,10 @@
 				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.gatsbyjs.org/">Gatsby.js</a>
 				<a class="skills-block-link" target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a>
 				<a class="skills-block-link" target="_blank" rel="noopener" href="https://expressjs.com/">Express.js</a>
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.postgresql.org/">SQL / PostgreSQL</a>
-				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.typescriptlang.org/">Typescript</a>
+				<a class="skills-block-link" target="_blank" rel="noopener" href="https://www.postgresql.org/">SQL /
+					PostgreSQL</a>
+				<a class="skills-block-link" target="_blank" rel="noopener"
+					href="https://www.typescriptlang.org/">Typescript</a>
 			</div>
 		</section> <!-- End of Skills Sections -->
 
@@ -271,10 +287,12 @@
 						<a target="_blank" rel="noopener" class="icon-block-link icon-block-link-right" href="docs/resume.pdf">
 							<i class="fas fa-file-pdf"></i>
 						</a>
-						<a target="_blank" rel="noopener" class="icon-block-link icon-block-link-right" href="https://www.linkedin.com/in/andrew-shearer-webdev/">
+						<a target="_blank" rel="noopener" class="icon-block-link icon-block-link-right"
+							href="https://www.linkedin.com/in/andrew-shearer-webdev/">
 							<i class="fab fa-linkedin"></i>
 						</a>
-						<a target="_blank" rel="noopener" class="icon-block-link icon-block-link-right" href="https://github.com/andrews1022">
+						<a target="_blank" rel="noopener" class="icon-block-link icon-block-link-right"
+							href="https://github.com/andrews1022">
 							<i class="fab fa-github"></i>
 						</a>
 					</div> <!-- End of icon block -->
@@ -285,11 +303,13 @@
 					<form class="contact-form" method="POST" action="https://formspree.io/andrewshearerphotography@gmail.com">
 						<div class="contact-form-group">
 							<label for="name" class="contact-form-group-label">Name</label>
-							<input class="contact-form-group-input" type="text" name="name" id="name" placeholder="Enter your name...">
+							<input class="contact-form-group-input" type="text" name="name" id="name"
+								placeholder="Enter your name...">
 						</div>
 						<div class="contact-form-group">
 							<label for="email" class="contact-form-group-label">Email</label>
-							<input class="contact-form-group-input" type="text" name="email" id="email" placeholder="Enter your email address...">
+							<input class="contact-form-group-input" type="text" name="email" id="email"
+								placeholder="Enter your email address...">
 						</div>
 						<div class="contact-form-group">
 							<label for="message" class="contact-form-group-label">Message</label>
@@ -313,11 +333,11 @@
 	<footer class="footer">
 		<p class="para para-footer">&copy; all rights reserved | designed and built and andrew shearer
 			<a href="https://www.linkedin.com/in/andrew-shearer-webdev/" class="icon-block-link icon-block-link-left"
-					target="_blank" rel="noopener">
+				target="_blank" rel="noopener">
 				<i class="fab fa-linkedin"></i>
 			</a>
-			<a href="https://github.com/andrews1022" class="icon-block-link icon-block-link-left"
-					target="_blank" rel="noopener">
+			<a href="https://github.com/andrews1022" class="icon-block-link icon-block-link-left" target="_blank"
+				rel="noopener">
 				<i class="fab fa-github"></i>
 			</a>
 		</p>

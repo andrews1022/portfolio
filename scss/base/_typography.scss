@@ -2,7 +2,7 @@
 
   &-section {
     font-size: size(med) + 0.5rem;
-    padding: size(3rem) 0;
+    padding: size(sml) 0;
     text-align: $txt-cntr;
   }
 
@@ -48,6 +48,14 @@
       margin-right: size(x-sml) + 0.5rem;
       text-align: $txt-lft;
     }
+  }
+
+  &-link-ang {
+    @include paraLinkStyles(color(pri));
+  }
+
+  &-link-car {
+    @include paraLinkStyles(color(tert));
   }
 }
 
